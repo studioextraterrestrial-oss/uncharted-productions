@@ -101,7 +101,7 @@
 
     /* ─────────── HERO ─────────── */
     .hero {
-      position: relative; height: 100vh; min-height: 600px;
+      position: relative; height: 100vh; height: 100svh;
       background: var(--dark-bg); color: var(--dark-ink);
       overflow: hidden; display: flex; align-items: flex-end;
     }
@@ -175,6 +175,7 @@
     .opportunity-stats { border-top: 1px solid var(--dark-hairline); padding-top: 32px; display: flex; flex-direction: column; gap: 12px; }
     .opportunity-stats p { font-size: 13px; color: var(--dark-muted); letter-spacing: 0.02em; }
     .opportunity-stats .source { opacity: 0.5; font-size: 11px; margin-left: 8px; }
+    @media (max-width: 600px) { .opportunity-stats .source { display: block; margin-left: 0; margin-top: 4px; } }
 
     /* ─────────── APPROACH ─────────── */
     .approach-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(36px, 5vw, 64px) clamp(40px, 6vw, 80px); }
@@ -186,7 +187,7 @@
     .approach-philosophy { margin-top: clamp(80px, 12vh, 120px); padding-top: clamp(64px, 10vh, 96px); border-top: 1px solid var(--hairline); max-width: 800px; }
     .philosophy-title { font-family: 'Bricolage Grotesque', sans-serif; font-variation-settings: 'opsz' 48, 'wdth' 100; font-size: clamp(28px, 4vw, 48px); font-weight: 500; margin-bottom: 24px; line-height: 1.1; }
     .philosophy-intro { font-size: clamp(18px, 2.2vw, 24px); line-height: 1.4; font-weight: 500; color: var(--ink); margin-bottom: 32px; }
-    .philosophy-body { font-size: 16px; line-height: 1.7; color: var(--ink-soft); }
+    .philosophy-body { font-size: 14px; line-height: 1.7; color: var(--ink-soft); }
 
     /* ─────────── ARCHIVE BAND ─────────── */
     .archive { background: var(--bg); color: var(--ink); border-top: 1px solid var(--hairline); }
@@ -221,6 +222,7 @@
     .foot-col ul { list-style: none; }
     .foot-col li { font-size: 14px; margin-bottom: 12px; }
     .foot-bottom { display: flex; justify-content: space-between; font-size: 11px; color: var(--dark-muted); flex-wrap: wrap; text-transform: lowercase; }
+    @media (max-width: 600px) { .foot-bottom { flex-direction: column; align-items: flex-start; gap: 12px; } }
     .foot-mark { font-family: 'Bricolage Grotesque', sans-serif; font-size: 14px; color: var(--dark-ink); }
 
     ::selection { background: var(--ink); color: var(--bg); }
@@ -287,7 +289,7 @@
         <iframe src="https://www.youtube.com/embed/VIDEO_ID?rel=0&modestbranding=1&color=white" title="Uncharted Productions — Concept Reel" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="reel-caption">
-        <p>A two-minute mood film exploring the visual language of our coming work: the tone, palette, rhythm. A sketch of a position, not a final statement. Version 1.0 for day zero.</p>
+        <p>A two-minute mood film exploring the visual language of our coming work: the tone, palette, rhythm. A sketch of a position, not a final statement.</p>
         <dl class="reel-credits">
           <div><dt>direction</dt><dd>isaac alex-usifo</dd></div>
           <div><dt>studio</dt><dd>uncharted productions</dd></div>
@@ -355,12 +357,12 @@
         <div class="principle">
           <div class="principle-num">i.</div>
           <h3 class="principle-title">Deeply personal, original films</h3>
-          <p>Stories that mean something to the filmmaker and to the audience. Sometimes for millions, sometimes for a few. Films that move deeply, that touch identity, humanity, society and nature, starting with the Nigerian and African experience, and let it travel from there.</p>
+          <p>Stories that mean something to the filmmaker and to the audience. Sometimes for millions, sometimes for a few. Films that move deeply, that touch identity, humanity, society and nature, starting with the Nigerian and African experience.</p>
         </div>
         <div class="principle">
           <div class="principle-num">ii.</div>
           <h3 class="principle-title">Multiple genres, and new ones</h3>
-          <p>Thrillers, dramas, science fiction, and the spaces in between. We also explore genre-blending in ways that challenge what audiences expect, and open story pathways Nollywood hasn't taken yet.</p>
+          <p>Thrillers, dramas, science fiction, and the spaces in between. We even explore genre-blending in ways that challenge what audiences expect, and open story pathways Nollywood hasn't taken yet.</p>
         </div>
         <div class="principle">
           <div class="principle-num">iii.</div>
